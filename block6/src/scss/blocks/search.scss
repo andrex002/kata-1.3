@@ -1,0 +1,19 @@
+.search {
+  display: none;
+  margin-left: auto;
+  font-size: 0;
+  line-height: 0;
+  border: 0;
+  background-color: transparent;
+  &::after {
+    background-image: url('../img/icon-search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+@media (min-width: $desktop-width) {
+  .search {
+    display: block;
+  }
+}

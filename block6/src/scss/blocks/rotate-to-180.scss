@@ -1,0 +1,5 @@
+.rotate-to-180 {
+  &::before {
+    transform: rotate(180deg);
+  }
+}

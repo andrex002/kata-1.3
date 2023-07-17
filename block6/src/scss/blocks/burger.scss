@@ -1,0 +1,15 @@
+.burger {
+  font-size: 0;
+  line-height: 0;
+}
+.burger__btn {
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  &::after {
+    background-image: url(../img/icon-burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

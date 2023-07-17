@@ -1,0 +1,19 @@
+@mixin title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  text-transform: uppercase;
+  padding: 16px 0;
+  margin: 0 0 16px;
+}
+@mixin arrow-link {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../img/icon-go.svg);
+  background-repeat: no-repeat;
+}
