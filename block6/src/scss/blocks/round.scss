@@ -1,5 +1,6 @@
 .round {
   transition: opacity 0.3s ease;
+
   &::after {
     content: '';
     display: block;
@@ -8,6 +9,7 @@
     border-radius: 50%;
     background-color: $btn-color;
   }
+
   &:hover {
     opacity: 0.55;
   }

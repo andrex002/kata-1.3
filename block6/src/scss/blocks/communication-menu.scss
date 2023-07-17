@@ -6,31 +6,38 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .communication-menu {
   display: none;
 }
-.communication-menu__item + .communication-menu__item {
+
+.communication-menu__item+.communication-menu__item {
   margin-left: 16px;
 }
+
 .communication-menu__link {
   font-size: 0;
   line-height: 0;
+
   &::after {
     font-size: 0;
     line-height: 0;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &--call {
     &::after {
       background-image: url('../img/icon-phone.svg');
     }
   }
+
   &--feedback {
     &::after {
       background-image: url('../img/icon-message.svg');
     }
   }
+
   &--profile {
     &::after {
       background-image: url('../img/icon-user.svg');
@@ -47,12 +54,15 @@
     font-size: 0;
     line-height: 0;
   }
+
   .communication-menu__item {
     margin-left: 16px;
   }
+
   .left-column--opened-menu .communication-menu {
     margin-top: auto;
   }
+
   .left-column--opened-menu .communication-menu__item {
     &:first-child {
       margin-left: 0;
@@ -64,10 +74,12 @@
   .communication-menu {
     margin-bottom: 16px;
   }
+
   .communication-menu__item {
     margin-left: 0;
   }
-  .communication-menu__item + .communication-menu__item {
+
+  .communication-menu__item+.communication-menu__item {
     margin-left: 16px;
   }
 }

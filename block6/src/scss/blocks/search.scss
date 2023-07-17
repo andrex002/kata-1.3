@@ -5,6 +5,7 @@
   line-height: 0;
   border: 0;
   background-color: transparent;
+
   &::after {
     background-image: url('../img/icon-search.svg');
     background-repeat: no-repeat;
@@ -12,6 +13,7 @@
     cursor: pointer;
   }
 }
+
 @media (min-width: $desktop-width) {
   .search {
     display: block;

@@ -1,15 +1,18 @@
 .services {
   margin-bottom: 24px;
 }
+
 .services__container {
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
 }
+
 .services__text {
   margin: 0 0 16px;
   letter-spacing: 0.2px;
 }
+
 .services__more-link {
   display: flex;
   align-items: center;
@@ -19,6 +22,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
+
   &::before {
     content: '';
     display: inline-block;
@@ -30,41 +34,51 @@
     background-position: center center;
   }
 }
+
 .services__picture {
   margin-left: -16px;
   margin-right: -16px;
 }
+
 .services__image {
   display: block;
   margin: 0 auto;
 }
+
 @media (min-width: $tablet-width) {
   .services__container {
     display: flex;
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .services__text {
     line-height: 20px;
   }
+
   .services__info {
     margin-right: 48px;
   }
+
   .services__picture {
     flex: 0 0 50%;
     margin: 0;
   }
 }
+
 @media (min-width: $desktop-width) {
   .services__container {
     padding-left: 32px;
     padding-right: 32px;
   }
+
   .services__info {
     padding-top: 9px;
   }
+
   .services__more-link {
     transition: opacity 0.3s ease;
+
     &:hover {
       opacity: 0.55;
     }

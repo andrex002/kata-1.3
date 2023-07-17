@@ -2,15 +2,19 @@
   padding-bottom: 40px;
   border-top: 1px solid #d9fff5;
 }
+
 .price__container {
   padding-left: 16px;
   padding-right: 16px;
 }
+
 .price__title {
   @include title;
 }
+
 .price__slider {
   margin-right: -16px;
+
   &::before {
     content: '';
     position: absolute;
@@ -18,14 +22,13 @@
     right: 0;
     width: 24px;
     height: 200px;
-    background: linear-gradient(
-      270deg,
-      #f8f8f8 0.04%,
-      rgba(248, 248, 248, 0) 100%
-    );
+    background: linear-gradient(270deg,
+        #f8f8f8 0.04%,
+        rgba(248, 248, 248, 0) 100%);
     z-index: 2;
   }
 }
+
 .price__list {
   margin: 0;
   padding: 0;
@@ -33,17 +36,21 @@
   margin-bottom: 16px;
   box-sizing: border-box;
 }
+
 .price__head {
   display: none;
 }
+
 .price__pagination {
   text-align: center;
   margin-bottom: 16px;
 }
+
 .price__description {
   line-height: 20px;
   letter-spacing: 0.5px;
 }
+
 .price__proposal {
   display: block;
   width: 192px;
@@ -51,6 +58,7 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
+
   &::after {
     content: '';
     display: inline-block;
@@ -62,78 +70,98 @@
     background-position: center;
   }
 }
+
 @media (min-width: $tablet-width) {
   .price {
     padding-bottom: 47px;
   }
+
   .price__container {
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .price__head {
     display: flex;
     padding: 16px;
   }
+
   .price__head-item {
     font-weight: 500;
     line-height: 16px;
     color: #7e7e82;
     opacity: 0.72;
+
     &--service {
       flex-grow: 1;
     }
+
     &--price {
       width: 14%;
     }
+
     &--time {
       width: 15%;
     }
+
     &--empty {
       flex: 0 0 119px;
     }
   }
+
   .price__slider {
     margin: 0;
     border-radius: 6px;
     background: #fff;
+
     &::before {
       display: none;
     }
   }
+
   .price__list {
     flex-direction: column;
     padding: 0 16px;
     margin-bottom: 24px;
   }
+
   .price__description {
     width: 59%;
     margin: 0 0 16px;
   }
+
   .price__proposal {
     width: 100%;
   }
 }
+
 @media (min-width: $desktop-width) {
   .price__container {
     padding-left: 32px;
     padding-right: 32px;
   }
+
   .price__head-item {
     &--price {
       width: 227px;
     }
+
     &--time {
       width: 192px;
     }
   }
+
   .price__list {
     margin-bottom: 32px;
   }
+
   .price__description {
     width: 421px;
   }
+
   .price__proposal {
     transition: opacity 0.3s ease;
+
     &:hover {
       opacity: 0.55;
     }

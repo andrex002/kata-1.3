@@ -2,20 +2,24 @@
   padding-bottom: 24px;
   border-top: 1px solid #d9fff5;
 }
+
 .repair__container {
   padding-left: 16px;
   padding-right: 16px;
 }
+
 .repair__title {
   @include title;
   margin-bottom: 16px;
 }
+
 .repair__list {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 16px;
 }
+
 .repair__item {
   width: 240px;
   height: 160px;
@@ -25,13 +29,16 @@
   background: #fff;
   box-sizing: border-box;
 }
+
 .repair__link {
   @include arrow-link;
   bottom: 16px;
   right: 16px;
 }
+
 .repair__slider {
   margin-right: -16px;
+
   &::before {
     content: '';
     position: absolute;
@@ -39,41 +46,46 @@
     right: 0;
     width: 24px;
     height: 166px;
-    background: linear-gradient(
-      270deg,
-      #f8f8f8 0.04%,
-      rgba(248, 248, 248, 0) 100%
-    );
+    background: linear-gradient(270deg,
+        #f8f8f8 0.04%,
+        rgba(248, 248, 248, 0) 100%);
     z-index: 2;
   }
 }
+
 .repair__pagination {
   text-align: center;
   margin-left: -8px;
 }
+
 .repair__more-btn {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .repair__container {
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .repair__slider {
     &::before {
       display: none;
     }
   }
+
   .repair__list {
     display: grid;
     grid-template-columns: repeat(3, minmax(224px, auto));
     gap: 16px 24px;
     margin-bottom: 24px;
   }
+
   .repair__item {
     width: 100%;
     box-sizing: border-box;
   }
+
   .repair__more-btn {
     display: flex;
     margin: 0;
@@ -84,6 +96,7 @@
     letter-spacing: -0.2px;
     border: 0;
     background-color: transparent;
+
     &::before {
       content: '';
       display: block;
@@ -96,26 +109,33 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .repair {
     padding-bottom: 50px;
   }
+
   .repair__container {
     padding-left: 32px;
     padding-right: 32px;
   }
+
   .repair__list {
     grid-template-columns: repeat(4, minmax(240px, auto));
     gap: 16px 32px;
   }
+
   .repair__link {
     transition: transform 0.3s ease;
+
     &:hover {
       transform: scale(1.2);
     }
   }
+
   .repair__more-btn {
     transition: opacity 0.3s ease;
+
     &:hover {
       opacity: 0.55;
     }

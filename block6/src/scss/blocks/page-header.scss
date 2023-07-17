@@ -5,26 +5,31 @@
   border-bottom: 1px solid #d9fff5;
   z-index: 2;
 }
+
 .page-header__wrapper {
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 16px;
 }
+
 .page-header__user-nav {
   margin-left: auto;
 }
+
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     padding: 0 24px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header {
     padding-top: 42px;
     padding-bottom: 8px;
     border: 0;
   }
+
   .page-header__wrapper {
     padding: 0 32px;
   }

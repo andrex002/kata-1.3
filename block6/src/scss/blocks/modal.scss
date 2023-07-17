@@ -6,10 +6,12 @@
   height: 100%;
   z-index: 10;
   transition: right 0.3s ease;
+
   &--show {
     right: 0;
   }
 }
+
 .modal__wrapper {
   position: relative;
   width: 320px;
@@ -19,6 +21,7 @@
   background-color: #fff;
   overflow: auto;
 }
+
 .modal__overlay {
   position: absolute;
   top: 0;
@@ -29,6 +32,7 @@
   opacity: 0.9;
   z-index: -1;
 }
+
 .modal__close-btn {
   margin: 0;
   margin-bottom: 40px;
@@ -37,12 +41,14 @@
   font-size: 0;
   line-height: 0;
   background-color: transparent;
+
   &::after {
     background-image: url('../img/icon-cross.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
 }
+
 .modal__title {
   position: relative;
   margin: 0 0 24px;
@@ -51,6 +57,7 @@
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.6px;
+
   &::before {
     content: '';
     position: absolute;
@@ -62,6 +69,7 @@
     border-radius: 8px;
   }
 }
+
 .modal__input {
   display: block;
   width: 100%;
@@ -74,27 +82,33 @@
   border-radius: 8px;
   border: 1px solid #eaeaea;
   background: #fff;
+
   &::placeholder {
     color: #b5b6bc;
   }
+
   &--textarea {
     padding: 12px 16px;
     height: 118px;
     resize: none;
   }
 }
+
 .modal__description {
   margin: 0 0 19px;
   font-weight: 500;
   line-height: 16px;
   color: #7e7e82;
 }
+
 .modal__link {
   color: #ff3e79;
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 .modal__submit {
   display: flex;
   align-items: center;
@@ -109,6 +123,7 @@
   background-color: $btn-color;
   border-radius: 16px;
   border: 0;
+
   &::after {
     content: '';
     display: inline-block;
@@ -118,6 +133,7 @@
     background-image: url('../img/icon-goside.svg');
   }
 }
+
 @media (min-width: $desktop-width) {
   .modal__wrapper {
     padding: 40px 32px;
@@ -126,17 +142,20 @@
     border-left: 1px solid #d9fff5;
     overflow: visible;
   }
+
   .modal__close-btn {
     position: absolute;
     top: 32px;
     left: -72px;
   }
+
   .modal__title {
     &::before {
       width: 3px;
       left: -35px;
     }
   }
+
   .modal__description {
     margin-bottom: 23px;
   }

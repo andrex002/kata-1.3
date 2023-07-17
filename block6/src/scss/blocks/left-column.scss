@@ -4,6 +4,7 @@
   align-items: center;
   padding: 18px 130px 17px 16px;
   z-index: 5;
+
   &--opened-menu {
     position: fixed;
     top: 0;
@@ -19,58 +20,73 @@
     overflow: auto;
   }
 }
+
 .left-column__top {
   display: flex;
   align-items: center;
 }
+
 .left-column__burger {
   margin-right: 18px;
 }
+
 .left-column--opened-menu .search,
 .left-column--opened-menu .main-nav {
   display: block;
 }
+
 .left-column--opened-menu .left-column__top {
   justify-content: flex-start;
 }
+
 .left-column--opened-menu .burger__btn::after {
   background-image: url('../img/icon-cross.svg');
 }
+
 .left-column--opened-menu .left-column__top {
   margin-bottom: 26px;
 }
+
 @media (min-width: $tablet-width) {
   .left-column {
     padding-left: 24px;
     padding-right: 162px;
     justify-content: space-between;
+
     &--opened-menu {
       padding: 18px 24px 32px;
     }
   }
+
   .left-column--opened-menu .left-column__top {
     margin-bottom: 50px;
   }
 }
+
 @media (min-width: $desktop-width) {
+
   .left-column,
   .left-column--opened-menu {
     position: static;
     flex-direction: column;
     padding: 30px 30px 30px 20px;
   }
+
   .left-column {
     flex: 0 0 306px;
     align-items: stretch;
     justify-content: flex-start;
     z-index: 5;
   }
+
   .left-column--opened-menu {
     box-shadow: none;
   }
+
   .left-column__burger {
     display: none;
   }
+
   .left-column__top {
     margin-bottom: 37px;
   }
